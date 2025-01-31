@@ -188,26 +188,46 @@ footer {
 
 
 
-/* Layout principale con Flexbox */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    padding: 20px;
-}
+/* Regole per dispositivi con larghezza max di 768px (tablet e telefoni) */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px; /* Font più piccolo per adattarsi meglio */
+        margin: 0; /* Elimina margini non necessari */
+        padding: 0; /* Elimina padding non necessari */
+    }
+    
+    /* Centra il contenuto */
+    .container { /* Assicurati che il contenitore abbia la classe "container" */
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 10px; /* Aggiungi un po' di padding */
+    }
 
-section {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-}
+    /* Imposta la larghezza dell'immagine */
+    img {
+        max-width: 100%;
+        height: auto; /* Mantieni le proporzioni */
+    }
 
-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    /* Assicurati che i testi non si sovrappongano */
+    h1, h2, p {
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+    /* Riduci i padding e margini di altri elementi se necessario */
+    header, footer {
+        padding: 20px 0;
+    }
+
+    /* Altri aggiustamenti personalizzati */
+    /* Ad esempio, se hai una navbar */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
