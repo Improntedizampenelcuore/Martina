@@ -184,6 +184,7 @@ footer {
     h1 {
         font-size: 30px; /* Dimensione del titolo più piccola sui dispositivi mobili */
         margin-bottom: 10px;
+        display: block; /* Assicurati che il titolo sia visibile */
     }
 
     /* Disporre gli elementi in colonna e centrati */
@@ -194,10 +195,9 @@ footer {
         justify-content: center;
     }
 
-    /* Nascondere il secondo logo e il titolo sui dispositivi mobili */
-    .logo-container:nth-child(2), /* Nasconde il secondo logo */
-    h1 { /* Nasconde il titolo */
-        display: none;
+    /* Nascondere il secondo logo sui dispositivi mobili */
+    .logo-container:nth-child(2) { 
+        display: none; /* Nasconde il secondo logo */
     }
 
     /* Mostra solo il primo logo */
@@ -220,6 +220,12 @@ footer {
 
     nav {
         flex-direction: column; /* Disposizione verticale della navbar su mobile */
+        padding: 15px 0; /* Maggiore padding per la navbar su mobile */
+    }
+
+    nav a {
+        font-size: 18px; /* Ridurre la dimensione del testo dei link */
+        margin-bottom: 10px; /* Aggiungere uno spazio tra i link */
     }
 
     select {
@@ -237,6 +243,8 @@ footer {
     .dog-info {
         text-align: center;
     }
+	
+}
 
 
 
