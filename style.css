@@ -1,0 +1,286 @@
+/* Importa i font richiesti */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300&display=swap');
+
+body { 
+    font-family: 'Poppins', sans-serif; 
+    text-align: center; 
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+body {
+    background-image: url('sfondo.jpg');
+    background-repeat: repeat-y; /* Ripete l'immagine solo verticalmente */
+    background-size: 100% auto; /* Larghezza al 100%, altezza automatica */
+    background-position: top center; /* Allinea in alto e centrato */
+    background-attachment: fixed; /* Mantiene lo sfondo fisso mentre scorri */
+    margin: 0; /* Rimuove margini bianchi */
+    padding: 0; /* Rimuove padding bianchi */
+}
+
+
+
+/* Header con loghi e titolo */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+}
+
+/* Titolo Associazione con font simile a Baguet Script */
+h1 {
+    flex: 3;
+    font-family: 'Poppins', sans-serif; /
+    font-size: 70px;
+	font-weight: bold;
+    color: #d73a71;
+    margin: 0;
+}
+
+/* Navbar lunga tutta la pagina */
+nav { 
+    background-color: black; 
+    padding: 10px 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+
+/* Stile per i link del menù */
+nav a { 
+    font-family: 'Poppins', sans-serif; /* Congenial Light non è un font web, uso Poppins Light */
+    color: white; 
+    text-decoration: none; 
+    margin: 0 20px; 
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #9b55cc;
+}
+
+/* Stile dei titoli delle sezioni */
+section h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 36px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0;
+    color: #d73a71;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile delle box di testo */
+section {
+    font-family: 'Poppins', sans-serif; /* Congenial Light sostituito con Poppins Light */
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Schede dei cani */
+.dog-card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px 0;
+}
+
+.dog-card img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 20px;
+	flex-shrink: 0; /* Aggiungi questa linea */
+}
+
+.dog-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-family: 'Poppins', sans-serif; /* Congenial Light */
+}
+
+.dog-card h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #d73a71;
+    margin-bottom: 10px;
+}
+
+.dog-card ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.dog-card p.description {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+footer {
+    background-color: #ff5f6d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Stile per i link Amazon, Maps, Social */
+#dona-ora a,
+#dove-siamo a,
+#contatti a {
+    color: #7a4ec2;
+    text-decoration: none;
+}
+
+#dona-ora a:hover,
+#dove-siamo a:hover,
+#contatti a:hover {
+    color: #9b55cc;
+}
+
+/* Responsività */
+@media (max-width: 768px) {
+    .dog-card {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .dog-info {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h3 {
+        font-size: 18px;
+    }
+}
+
+/* Stile generale dei select */
+select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+    border: 2px solid #d73a71;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    appearance: none; /* Rimuove lo stile predefinito */
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Effetto al passaggio del mouse */
+select:hover {
+    border-color: #9b55cc;
+}
+
+/* Effetto al focus */
+select:focus {
+    border-color: #ff5f6d;
+    box-shadow: 0 0 5px rgba(255, 95, 109, 0.5);
+}
+
+
+
+
+/* Miglioramento della lista di opzioni */
+select option {
+    font-size: 16px;
+    background-color: white;
+    color: #333;
+}
+
+/* Contenitore per i selettori */
+.select-group {
+    display: flex;
+    justify-content: center; /* Centra i selettori */
+    gap: 15px; /* Distanza tra i selettori */
+    flex-wrap: wrap; /* Se lo schermo è piccolo, vanno a capo */
+    margin-bottom: 20px;
+}
+
+/* Stile per i selettori */
+.select-group label {
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 5px;
+    color: #d73a71; /* Colore rosa */
+}
+
+
+/* Stile per i select */
+.select-container select {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Rimpiccioliamo i select */
+.select-group select {
+    padding: 5px; /* Riduce lo spazio interno */
+    font-size: 14px; /* Rende il testo un po' più piccolo */
+    width: 120px; /* Imposta una larghezza fissa più compatta */
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+}
+
+select {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.heart, .house {
+    display: inline-block;
+    background-color: #ffebcc;
+    color: #d73a71;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 5px;
+}
