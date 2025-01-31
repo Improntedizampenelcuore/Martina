@@ -240,7 +240,7 @@ footer {
     }
 
     select {
-        display: block; /* Impostato su "block" per farli apparire in colonna */
+        display: block !important; /* Impostato su "block" per farli apparire in colonna */
         width: 100%;    /* Imposta la larghezza al 100% */
         margin-bottom: 10px; /* Aggiungi margine tra i select se necessario */
     }
