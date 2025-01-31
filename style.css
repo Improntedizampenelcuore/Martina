@@ -69,6 +69,8 @@ nav a {
     text-decoration: none; 
     margin: 0 20px; 
     font-size: 20px;
+	position: relative; /* Aggiunto per garantire che z-index funzioni */
+    z-index: 10; /* Aggiunto per portare il menù sopra altri elementi */
 }
 
 nav a:hover {
@@ -211,6 +213,8 @@ footer {
         padding: 15px 0;
         width: 100%; /* Navbar occupa tutta la larghezza */
         justify-content: flex-start; /* Allinea il menù verso l'alto */
+		position: relative; /* Aggiunto per garantire che z-index funzioni */
+		z-index: 10; /* Aggiunto per portare il menù sopra altri elementi */
     }
 
     /* I link diventano più piccoli e sono disposti in colonna */
