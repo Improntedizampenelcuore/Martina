@@ -186,11 +186,30 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
-    h3 {
-        font-size: 18px;
-    }
+
+
+/* Layout principale con Flexbox */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+section {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* Stile generale dei select */
 select {
