@@ -332,6 +332,12 @@ select {
     opacity: 1 !important;
 }
 
+nav { 
+    display: flex !important; /* Forza il display del menù */
+    position: relative !important; /* Forza la posizione */
+    z-index: 9999; /* Molto alto per mettere sopra altri contenuti */
+}
+
 .heart, .house {
     display: inline-block;
     background-color: #ffebcc;
