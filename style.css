@@ -292,7 +292,6 @@ select option {
     display: flex;
     justify-content: center; /* Centra i selettori */
     gap: 15px; /* Distanza tra i selettori */
-    flex-wrap: wrap; /* Se lo schermo è piccolo, vanno a capo */
     margin-bottom: 20px;
 }
 
