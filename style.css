@@ -244,13 +244,28 @@ footer {
         justify-content: flex-start; /* Allinea dall'inizio */
     }
 
+    .select-group {
+        flex-direction: column; /* Dispone i select in colonna */
+        justify-content: flex-start; /* Allinea dall'inizio */
+        align-items: stretch; /* Rende i select più larghi */
+    }
+
     select {
-        width: 33.33%; /* Dividi lo spazio in 3 colonne per i select */
-        margin-bottom: 10px; /* Distanza verticale tra i select */
+        width: 100%; /* Rende i select più larghi */
+        margin-bottom: 10px; /* Aggiungi un margine tra i select */
     }
 }
     
+@media (max-width: 480px) {
+    .select-group {
+        flex-direction: column; /* Dispone i select in colonna */
+        align-items: stretch; /* Rende i select più larghi */
+    }
 
+    select {
+        width: 100%; /* Rende ogni select più largo */
+    }
+}
 
 
 /* Stile generale dei select */
@@ -294,7 +309,8 @@ select option {
 /* Contenitore per i selettori */
 .select-group {
     display: flex;
-    justify-content: center; /* Centra i selettori */
+    flex-wrap: wrap; /* Consente ai select di andare a capo */
+    justify-content: center; /* Centra i selettori orizzontalmente */
     gap: 15px; /* Distanza tra i selettori */
     margin-bottom: 20px;
 }
