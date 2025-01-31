@@ -246,8 +246,8 @@ footer {
 
     .select-group {
         flex-direction: column; /* Dispone i select in colonna */
-        justify-content: flex-start; /* Allinea dall'inizio */
-        align-items: stretch; /* Rende i select più larghi */
+        justify-content: center; /* Allinea i select al centro */
+        align-items: center; /* Centra i select verticalmente */
     }
 
     select {
@@ -259,7 +259,7 @@ footer {
 @media (max-width: 480px) {
     .select-group {
         flex-direction: column; /* Dispone i select in colonna */
-        align-items: stretch; /* Rende i select più larghi */
+        align-items: center; /* Centra i select */
     }
 
     select {
