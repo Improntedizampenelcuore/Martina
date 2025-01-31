@@ -207,14 +207,16 @@ footer {
 
     /* Navbar verticale su dispositivi mobili */
     nav {
-        flex-direction: column; /* Navbar disposta verticalmente */
+        flex-direction: column; /* Dispone i link in colonna */
         padding: 15px 0;
         width: 100%; /* Navbar occupa tutta la larghezza */
+        justify-content: flex-start; /* Allinea il menù verso l'alto */
     }
 
+    /* I link diventano più piccoli e sono disposti in colonna */
     nav a {
-        font-size: 18px; /* Ridurre la dimensione del testo dei link */
-        margin-bottom: 10px; /* Spazio tra i link */
+        font-size: 18px; /* Ridurre la dimensione dei link */
+        margin-bottom: 10px; /* Distanza tra i link */
     }
 
     /* Adattamenti per la card dei cani (sezione dog-card) */
