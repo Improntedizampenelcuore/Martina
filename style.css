@@ -228,6 +228,26 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+	
+    select {
+        display: block; /* Impostato su "block" per farli apparire in colonna */
+        width: 100%;    /* Imposta la larghezza al 100% per adattarsi alla colonna */
+        margin-bottom: 10px; /* Aggiungi margine tra i select se necessario */
+    }
+	.header {
+        flex-direction: column; /* Imposta la direzione della flexbox in colonna */
+        align-items: center; /* Centra gli elementi nella colonna */
+    }
+
+    .logo-container {
+        margin-bottom: 10px; /* Distanza tra il logo e il titolo */
+    }
+
+    h1 {
+        font-size: 24px; /* Riduci la dimensione del titolo per schermi piccoli */
+        margin: 10px 0; /* Aggiungi spazio sopra e sotto il titolo */
+    }
+}
 }
 
 
