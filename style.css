@@ -239,10 +239,14 @@ footer {
         height: auto; /* Mantieni le proporzioni */
     }
 
+    .container {
+        flex-direction: column; /* Assicura che siano in colonna */
+        justify-content: flex-start; /* Allinea dall'inizio */
+    }
+
     select {
-        display: block !important; /* Impostato su "block" per farli apparire in colonna */
-        width: 100%;    /* Imposta la larghezza al 100% */
-        margin-bottom: 10px; /* Aggiungi margine tra i select se necessario */
+        width: 33.33%; /* Dividi lo spazio in 3 colonne per i select */
+        margin-bottom: 10px; /* Distanza verticale tra i select */
     }
 }
     
@@ -325,10 +329,10 @@ select option {
     cursor: pointer;
 }
 
-select {
-    display: block !important;
-    visibility: visible !important;
-    opacity: 1 !important;
+.container { /* Assumendo che i select siano in un contenitore flex */
+    display: flex;
+    flex-wrap: wrap; /* Consente di andare a capo */
+    justify-content: flex-start; /* Può essere cambiato per un altro tipo di allineamento */
 }
 
 nav { 
