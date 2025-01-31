@@ -178,11 +178,10 @@ footer {
 
 
 
-/* Regole per dispositivi con larghezza max di 768px (tablet e telefoni) */
 @media (max-width: 768px) {
     /* Ridurre la dimensione del font per il titolo */
     h1 {
-        font-size: 30px; /* Dimensione del titolo più piccola sui dispositivi mobili */
+        font-size: 30px; /* Titolo più piccolo sui dispositivi mobili */
         margin-bottom: 10px;
         display: block; /* Assicurati che il titolo sia visibile */
     }
@@ -206,33 +205,16 @@ footer {
         margin-bottom: 10px; /* Aggiungi margine tra il logo e il resto */
     }
 
-    /* Assicurati che il corpo e i contenuti siano gestiti correttamente */
-    body {
-        font-size: 16px; /* Font più piccolo per adattarsi meglio */
-        margin: 0; /* Elimina margini non necessari */
-        padding: 0; /* Elimina padding non necessari */
-    }
-
-    img {
-        max-width: 100%; /* L'immagine non deve uscire dal contenitore */
-        height: auto; /* Mantieni le proporzioni */
-    }
-
+    /* Navbar verticale su dispositivi mobili */
     nav {
-        flex-direction: column; /* Disposizione verticale della navbar su mobile */
-        padding: 15px 0; /* Maggiore padding per la navbar su mobile */
-        width: 100%; /* Assicurati che occupi tutta la larghezza */
+        flex-direction: column; /* Navbar disposta verticalmente */
+        padding: 15px 0;
+        width: 100%; /* Navbar occupa tutta la larghezza */
     }
 
     nav a {
         font-size: 18px; /* Ridurre la dimensione del testo dei link */
-        margin-bottom: 10px; /* Aggiungere uno spazio tra i link */
-    }
-
-    select {
-        display: block; /* Impostato su "block" per farli apparire in colonna */
-        width: 100%;    /* Imposta la larghezza al 100% per adattarsi alla colonna */
-        margin-bottom: 10px; /* Aggiungi margine tra i select se necessario */
+        margin-bottom: 10px; /* Spazio tra i link */
     }
 
     /* Adattamenti per la card dei cani (sezione dog-card) */
@@ -243,6 +225,18 @@ footer {
 
     .dog-info {
         text-align: center;
+    }
+
+    /* Le immagini si adattano alla larghezza del dispositivo */
+    img {
+        max-width: 100%; /* Immagine si adatta alla larghezza */
+        height: auto; /* Mantieni le proporzioni */
+    }
+
+    select {
+        display: block; /* Impostato su "block" per farli apparire in colonna */
+        width: 100%;    /* Imposta la larghezza al 100% */
+        margin-bottom: 10px; /* Aggiungi margine tra i select se necessario */
     }
 }
     
