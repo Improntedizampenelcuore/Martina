@@ -234,23 +234,24 @@ footer {
         width: 100%;    /* Imposta la larghezza al 100% per adattarsi alla colonna */
         margin-bottom: 10px; /* Aggiungi margine tra i select se necessario */
     }
-	.header {
+	/* Disporre gli elementi in colonna e centrati */
+    .header {
         display: flex;
-        flex-direction: column; /* Disporre gli elementi in colonna */
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    /* Nascondere il secondo logo e il titolo su dispositivi mobili */
-    .logo-container:nth-of-type(2), /* Nasconde il secondo logo */
+    /* Nascondere il secondo logo e il titolo sui dispositivi mobili */
+    .logo-container:nth-child(2), /* Nasconde il secondo logo */
     h1 { /* Nasconde il titolo */
         display: none;
     }
 
     /* Mostra solo il primo logo */
-    .logo-container:nth-of-type(1) {
+    .logo-container:nth-child(1) {
         display: block;
-        margin-bottom: 10px; /* Aggiungi uno spazio sotto il primo logo */
+        margin-bottom: 10px; /* Aggiungi margine tra il logo e il resto */
     }
 }
 
