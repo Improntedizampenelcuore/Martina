@@ -235,20 +235,25 @@ footer {
         margin-bottom: 10px; /* Aggiungi margine tra i select se necessario */
     }
 	.header {
-        flex-direction: column; /* Imposta la direzione della flexbox in colonna */
-        align-items: center; /* Centra gli elementi nella colonna */
+        display: flex;
+        flex-direction: column; /* Disporre gli elementi in colonna */
+        align-items: center;
+        justify-content: center;
     }
 
-    .logo-container {
-        margin-bottom: 10px; /* Distanza tra il logo e il titolo */
+    /* Nascondere il secondo logo e il titolo su dispositivi mobili */
+    .logo-container:nth-of-type(2), /* Nasconde il secondo logo */
+    h1 { /* Nasconde il titolo */
+        display: none;
     }
 
-    h1 {
-        font-size: 24px; /* Riduci la dimensione del titolo per schermi piccoli */
-        margin: 10px 0; /* Aggiungi spazio sopra e sotto il titolo */
+    /* Mostra solo il primo logo */
+    .logo-container:nth-of-type(1) {
+        display: block;
+        margin-bottom: 10px; /* Aggiungi uno spazio sotto il primo logo */
     }
 }
-}
+
 
 
 /* Stile generale dei select */
