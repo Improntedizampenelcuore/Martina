@@ -221,6 +221,7 @@ footer {
     nav {
         flex-direction: column; /* Disposizione verticale della navbar su mobile */
         padding: 15px 0; /* Maggiore padding per la navbar su mobile */
+        width: 100%; /* Assicurati che occupi tutta la larghezza */
     }
 
     nav a {
@@ -243,8 +244,8 @@ footer {
     .dog-info {
         text-align: center;
     }
-	
 }
+    
 
 
 
